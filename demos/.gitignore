@@ -1,0 +1,20 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+plan.txt
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Lock files: em projetos reais, COMMITE o .terraform.lock.hcl.
+# Aqui eles são ignorados para que o "terraform init" gere o arquivo ao vivo na Demo 1.
+.terraform.lock.hcl
+
+# Nome do storage do state gerado pelo setup
+setup/.tfstate-storage-name

@@ -1,0 +1,11 @@
+locals {
+  name_suffix = "demo4-${random_string.suffix.result}"
+  name_prefix = "${var.project}-${var.env}"
+
+  common_tags = merge(var.tags, {
+    env        = var.env
+    project    = var.project
+    managed_by = "terraform"
+    newtag    = "newvalue"
+  })
+}
